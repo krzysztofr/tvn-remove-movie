@@ -9,6 +9,8 @@
 // @match          http://tvn24.pl/*
 // @match          http://www.tvn24.pl/*
 // @match          http://tvnwarszawa.tvn24.pl/*
+// @match          http://tvn24bis.pl/*
+// @match          http://www.tvn24bis.pl/*
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js
 // ==/UserScript==
 
