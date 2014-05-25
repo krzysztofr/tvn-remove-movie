@@ -8,10 +8,19 @@
 // @version        1.0
 // @match          http://tvn24.pl/*
 // @match          http://www.tvn24.pl/*
+// @match          http://tvnwarszawa.tvn24.pl/*
 // @require        https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js
 // ==/UserScript==
 
+// tvn24.pl
+e = document.getElementsByClassName('articleMainPhoto');
+if (typeof e[0] != 'undefined'){
+	e[0].parentNode.removeChild(e[0]);
+}
 
-e = document.getElementsByClassName('articleMainPhoto')
-e[0].parentNode.removeChild(e[0])
+e = document.getElementsByClassName('videoVideo');
+if (typeof e[0] != 'undefined'){
+	e[0].parentNode.removeChild(e[0]);
+}
+
 console.log('tvn-remove-movie userscript ran');
